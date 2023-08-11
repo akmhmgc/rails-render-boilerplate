@@ -1,6 +1,6 @@
 FROM --platform=linux/amd64 ruby:3.2.2
 
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs vim
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs vim npm
 
 ENV LANG=C.UTF-8 \
   GEM_HOME=/bundle \
