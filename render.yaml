@@ -13,8 +13,6 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: RAILS_ENV
-        value: staging
       # 作成されたデータベースからDATABASE_URLを取得する
       - key: DATABASE_URL
         fromDatabase:
